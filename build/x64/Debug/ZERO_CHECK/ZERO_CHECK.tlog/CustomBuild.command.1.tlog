@@ -1,0 +1,10 @@
+^C:\USERS\1ALIS\MYDIRECT\MYPROJECTS\AT\EVOL\BUILD\CMAKEFILES\D789BC5B11412C5CA98C2469E792908D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/1alis/MyDirect/MyProjects/AT/Evol -BC:/Users/1alis/MyDirect/MyProjects/AT/Evol/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/Evol.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
