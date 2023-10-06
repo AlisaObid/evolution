@@ -6,7 +6,7 @@ project(Evol)
 
 find_package(SFML COMPONENTS system window graphics CONFIG REQUIRED)
 
-add_executable(${PROJECT_NAME} main.cpp)
+add_executable(${PROJECT_NAME} main.cpp world.cpp world.hpp)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE sfml-system sfml-network sfml-graphics sfml-window)
 

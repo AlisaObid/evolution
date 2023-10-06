@@ -359,6 +359,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\1alis\MyDirect\MyProjects\AT\Evol\main.cpp" />
+    <ClCompile Include="C:\Users\1alis\MyDirect\MyProjects\AT\Evol\world.cpp" />
+    <ClInclude Include="C:\Users\1alis\MyDirect\MyProjects\AT\Evol\world.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\1alis\MyDirect\MyProjects\AT\Evol\build\ZERO_CHECK.vcxproj">

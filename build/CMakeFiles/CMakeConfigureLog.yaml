@@ -24,7 +24,7 @@ events:
       The output was:
       0
       Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
-      Сборка начата 15.09.2023 16:50:20.
+      Сборка начата 06.10.2023 17:42:05.
       
       Проект "C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\3.27.5\\CompilerIdC\\CompilerIdC.vcxproj" в узле 1 (целевые объекты по умолчанию).
       PrepareForBuild:
@@ -52,7 +52,7 @@ events:
           Предупреждений: 0
           Ошибок: 0
       
-      Прошло времени 00:00:00.90
+      Прошло времени 00:00:00.69
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -78,7 +78,7 @@ events:
       The output was:
       0
       Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
-      Сборка начата 15.09.2023 16:50:21.
+      Сборка начата 06.10.2023 17:42:06.
       
       Проект "C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\3.27.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
       PrepareForBuild:
@@ -106,7 +106,7 @@ events:
           Предупреждений: 0
           Ошибок: 0
       
-      Прошло времени 00:00:00.69
+      Прошло времени 00:00:00.47
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -125,8 +125,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-fztbtn"
-      binary: "C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-fztbtn"
+      source: "C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-d676xl"
+      binary: "C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-d676xl"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -138,32 +138,32 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-fztbtn'
+        Change Dir: 'C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-d676xl'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_87a87.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_00add.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
-        Сборка начата 15.09.2023 16:50:23.
+        Сборка начата 06.10.2023 17:42:07.
         
-        Проект "C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fztbtn\\cmTC_87a87.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Проект "C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d676xl\\cmTC_00add.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_87a87.dir\\Debug\\".
-          Создание каталога "C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fztbtn\\Debug\\".
-          Создание каталога "cmTC_87a87.dir\\Debug\\cmTC_87a87.tlog\\".
+          Создание каталога "cmTC_00add.dir\\Debug\\".
+          Создание каталога "C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d676xl\\Debug\\".
+          Создание каталога "cmTC_00add.dir\\Debug\\cmTC_00add.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_87a87.dir\\Debug\\cmTC_87a87.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_87a87.dir\\Debug\\cmTC_87a87.tlog\\unsuccessfulbuild".
+          Создание "cmTC_00add.dir\\Debug\\cmTC_00add.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_00add.dir\\Debug\\cmTC_00add.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_87a87.dir\\Debug\\\\" /Fd"cmTC_87a87.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_00add.dir\\Debug\\\\" /Fd"cmTC_00add.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
           Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32822 для x64
           CMakeCCompilerABI.c
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_87a87.dir\\Debug\\\\" /Fd"cmTC_87a87.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_00add.dir\\Debug\\\\" /Fd"cmTC_00add.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fztbtn\\Debug\\cmTC_87a87.exe" /INCREMENTAL /ILK:"cmTC_87a87.dir\\Debug\\cmTC_87a87.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-fztbtn/Debug/cmTC_87a87.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-fztbtn/Debug/cmTC_87a87.lib" /MACHINE:X64  /machine:x64 cmTC_87a87.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_87a87.vcxproj -> C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fztbtn\\Debug\\cmTC_87a87.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d676xl\\Debug\\cmTC_00add.exe" /INCREMENTAL /ILK:"cmTC_00add.dir\\Debug\\cmTC_00add.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-d676xl/Debug/cmTC_00add.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-d676xl/Debug/cmTC_00add.lib" /MACHINE:X64  /machine:x64 cmTC_00add.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_00add.vcxproj -> C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d676xl\\Debug\\cmTC_00add.exe
         PostBuildEvent:
           setlocal
-          C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-fztbtn/Debug/cmTC_87a87.exe -installedDir C:/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+          C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-d676xl/Debug/cmTC_00add.exe -installedDir C:/vcpkg/installed/x64-windows/debug/bin -OutVariable out
           if %errorlevel% neq 0 goto :cmEnd
           :cmEnd
           endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -173,15 +173,15 @@ events:
           if %errorlevel% neq 0 goto :VCEnd
           :VCEnd
         FinalizeBuildStatus:
-          Файл "cmTC_87a87.dir\\Debug\\cmTC_87a87.tlog\\unsuccessfulbuild" удаляется.
-          Обращение к "cmTC_87a87.dir\\Debug\\cmTC_87a87.tlog\\cmTC_87a87.lastbuildstate".
-        Сборка проекта "C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fztbtn\\cmTC_87a87.vcxproj" завершена (целевые объекты по умолчанию).
+          Файл "cmTC_00add.dir\\Debug\\cmTC_00add.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_00add.dir\\Debug\\cmTC_00add.tlog\\cmTC_00add.lastbuildstate".
+        Сборка проекта "C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d676xl\\cmTC_00add.vcxproj" завершена (целевые объекты по умолчанию).
         
         Сборка успешно завершена.
             Предупреждений: 0
             Ошибок: 0
         
-        Прошло времени 00:00:01.10
+        Прошло времени 00:00:00.84
         
       exitCode: 0
   -
@@ -193,8 +193,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-0clx2i"
-      binary: "C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-0clx2i"
+      source: "C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-8fi8gt"
+      binary: "C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-8fi8gt"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -206,32 +206,32 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-0clx2i'
+        Change Dir: 'C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-8fi8gt'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b10df.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d320f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
-        Сборка начата 15.09.2023 16:50:24.
+        Сборка начата 06.10.2023 17:42:08.
         
-        Проект "C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0clx2i\\cmTC_b10df.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Проект "C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8fi8gt\\cmTC_d320f.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_b10df.dir\\Debug\\".
-          Создание каталога "C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0clx2i\\Debug\\".
-          Создание каталога "cmTC_b10df.dir\\Debug\\cmTC_b10df.tlog\\".
+          Создание каталога "cmTC_d320f.dir\\Debug\\".
+          Создание каталога "C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8fi8gt\\Debug\\".
+          Создание каталога "cmTC_d320f.dir\\Debug\\cmTC_d320f.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_b10df.dir\\Debug\\cmTC_b10df.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_b10df.dir\\Debug\\cmTC_b10df.tlog\\unsuccessfulbuild".
+          Создание "cmTC_d320f.dir\\Debug\\cmTC_d320f.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_d320f.dir\\Debug\\cmTC_d320f.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b10df.dir\\Debug\\\\" /Fd"cmTC_b10df.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d320f.dir\\Debug\\\\" /Fd"cmTC_d320f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
           Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32822 для x64
           CMakeCXXCompilerABI.cpp
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b10df.dir\\Debug\\\\" /Fd"cmTC_b10df.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d320f.dir\\Debug\\\\" /Fd"cmTC_d320f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0clx2i\\Debug\\cmTC_b10df.exe" /INCREMENTAL /ILK:"cmTC_b10df.dir\\Debug\\cmTC_b10df.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-0clx2i/Debug/cmTC_b10df.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-0clx2i/Debug/cmTC_b10df.lib" /MACHINE:X64  /machine:x64 cmTC_b10df.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_b10df.vcxproj -> C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0clx2i\\Debug\\cmTC_b10df.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8fi8gt\\Debug\\cmTC_d320f.exe" /INCREMENTAL /ILK:"cmTC_d320f.dir\\Debug\\cmTC_d320f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-8fi8gt/Debug/cmTC_d320f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-8fi8gt/Debug/cmTC_d320f.lib" /MACHINE:X64  /machine:x64 cmTC_d320f.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_d320f.vcxproj -> C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8fi8gt\\Debug\\cmTC_d320f.exe
         PostBuildEvent:
           setlocal
-          C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-0clx2i/Debug/cmTC_b10df.exe -installedDir C:/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+          C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/1alis/MyDirect/MyProjects/AT/Evol/build/CMakeFiles/CMakeScratch/TryCompile-8fi8gt/Debug/cmTC_d320f.exe -installedDir C:/vcpkg/installed/x64-windows/debug/bin -OutVariable out
           if %errorlevel% neq 0 goto :cmEnd
           :cmEnd
           endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -241,15 +241,15 @@ events:
           if %errorlevel% neq 0 goto :VCEnd
           :VCEnd
         FinalizeBuildStatus:
-          Файл "cmTC_b10df.dir\\Debug\\cmTC_b10df.tlog\\unsuccessfulbuild" удаляется.
-          Обращение к "cmTC_b10df.dir\\Debug\\cmTC_b10df.tlog\\cmTC_b10df.lastbuildstate".
-        Сборка проекта "C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0clx2i\\cmTC_b10df.vcxproj" завершена (целевые объекты по умолчанию).
+          Файл "cmTC_d320f.dir\\Debug\\cmTC_d320f.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_d320f.dir\\Debug\\cmTC_d320f.tlog\\cmTC_d320f.lastbuildstate".
+        Сборка проекта "C:\\Users\\1alis\\MyDirect\\MyProjects\\AT\\Evol\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8fi8gt\\cmTC_d320f.vcxproj" завершена (целевые объекты по умолчанию).
         
         Сборка успешно завершена.
             Предупреждений: 0
             Ошибок: 0
         
-        Прошло времени 00:00:01.09
+        Прошло времени 00:00:00.81
         
       exitCode: 0
 ...
