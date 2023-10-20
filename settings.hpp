@@ -2,6 +2,7 @@
 #define SETTINGS_HPP
 
 #include <map>
+#include <string>
 #include <vector>
 
 class Settings
@@ -10,7 +11,7 @@ public:
 
 
 private:
-    map<string, int> mSettings
+    std::map<std::string, int> mSettings;
 };
 
 #endif // !SETTINGS_HPP

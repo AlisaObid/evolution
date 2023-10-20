@@ -1,13 +1,15 @@
 #include <SFML/Graphics.hpp>
 
+#include <vector>
 #include "world.hpp"
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(1000, 1000), ".");
-    window.setFramerateLimit(60);
+    sf::RenderWindow window;
 
-    World world(20, window);
+    std::vector<std::vector<int>> a;
+    a.resize(6, std::vector<int>(8));
+    World world(window, 20);
 
     while (window.isOpen())
     {
@@ -16,12 +18,8 @@ int main()
         {
             if (event.type == sf::Event::Closed) window.close();
         }
-
-        window.clear();
-
         world.print();
-        window.display();
     }
     
     return 0;
-} // 28
+} // настроить работу цветов

@@ -5,17 +5,20 @@
 #include <map>
 #include <SFML/Graphics.hpp>
 
+#include "cell.hpp"
+
 class World
 {
 public:
-    World(sf::RenderWindow& aWindow);
+    World(sf::RenderWindow& aWindow, int aCellSize);
 
     void print();
 
 private:
-    int mSize;
+    std::vector <std::vector<Cell>> mCells;
+    int mCellSize, mScreenX, mScreenY;
     sf::RenderWindow& mWindow;
-    std::vector<std::vector<int>> mPole;
+    std::vector<std::vector<int>> mMap;
 };
 
 #endif // !WORLD_HPP
