@@ -5,7 +5,7 @@
 #include <map>
 #include <SFML/Graphics.hpp>
 
-#include "cell.hpp"
+#include "models/object.hpp"
 
 class World
 {
@@ -15,10 +15,9 @@ public:
     void print();
 
 private:
-    std::vector <std::vector<Cell>> mCells;
+    std::vector <std::vector<Object*>> mCells;
     int mCellSize, mScreenX, mScreenY;
     sf::RenderWindow& mWindow;
-    std::vector<std::vector<int>> mMap;
 };
 
 #endif // !WORLD_HPP

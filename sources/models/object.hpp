@@ -1,28 +1,30 @@
-#ifndef CELL_HPP
-#define CELL_HPP
+#ifndef OBJECT_HPP
+#define OBJECT_HPP
 
 #include <SFML/Graphics.hpp>
 
 #include <map>
 #include <vector>
 
-class Cell
+class Object
 {
 public:
     enum class Type
     {
-        Nun,
+        None,
         Empty,
         Food,
         Poison,
         Bot
     };
-
+    Object(Type aType);
+    Type getType()
+    {
+        
+    }
 
 private:
     Type mType;
-
-private:
 };
 
-#endif // !CELL_HPP
+#endif // !OBJECT_HPP
