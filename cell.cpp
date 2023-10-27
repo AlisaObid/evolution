@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "cell.hpp"
 
 #include <SFML/Graphics.hpp>
@@ -12,5 +13,4 @@ Cell::Cell()
 };
 void nextStep()
 {
-
 }
