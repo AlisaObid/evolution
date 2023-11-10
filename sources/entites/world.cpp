@@ -19,7 +19,9 @@ World::World(sf::RenderWindow& aWindow, int aCellSize)
         {
             fin >> mScreenX >> mScreenY;
         }
-        
+        if(str == "bots_count")
+        {
+        }
     }
 
     mWindow.create(sf::VideoMode(mScreenX, mScreenY), "ⱯⱯⱯⱯⱯ");
