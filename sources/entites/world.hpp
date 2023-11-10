@@ -15,7 +15,8 @@ public:
     void print();
 
 private:
-    std::vector <std::vector<Object*>> mCells;
+    void worldStep();
+    std::vector<std::vector<Object*>> mCells;
     int mCellSize, mScreenX, mScreenY;
     sf::RenderWindow& mWindow;
 };

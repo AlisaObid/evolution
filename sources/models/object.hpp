@@ -15,13 +15,11 @@ public:
         Empty,
         Food,
         Poison,
-        Bot
+        Bot,
+        Wall
     };
     Object(Type aType);
-    Type getType()
-    {
-        
-    }
+    Type getType();
 
 private:
     Type mType;

@@ -1,18 +1,11 @@
 #include "bot.hpp"
+#include <vector>
 
 Bot::Bot() : Object(Object::Type::Bot)
 {
 }
 
-Bot::Type Bot::setSteps()
-{
-    for (int i = 0; i < 10; i++)
-    {
-        mSteps = createStep()
-    } 
-}
-
-pair<Bot::Type, int> Bot::createStep()
+Bot::Type Bot::createStep()
 {
     int num = 1 + (rand() % 6);
     switch(num)
@@ -29,5 +22,13 @@ pair<Bot::Type, int> Bot::createStep()
             return Bot::Type::Convert;
         case 6 :
             return Bot::Type::Unctrans;
+    }
+}
+
+void Bot::setSteps()
+{
+    for (int i = 0; i < 60; i++)
+    {
+        mSteps.push_back(createStep());
     }
 }

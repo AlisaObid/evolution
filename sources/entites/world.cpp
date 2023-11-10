@@ -52,24 +52,36 @@ void World::print()
             int i = y / yDist, j = x / xDist;
             square.setPosition((y % 2) * indent + x, y);
             sf::Color color;
-            switch( Object::Type::*mCells[i][j].getType() )
+            switch(mCells[i][j]->getType())
             {
                 case Object::Type::None:
-                    color = new sf::Color(255, 255, 255);
+                    color = sf::Color(255, 255, 255);
                 case Object::Type::Empty:
-                    color = new sf::Color(33, 31, 54);
+                    color = sf::Color(33, 31, 54);
                 case Object::Type::Food:
-                    color = new sf::Color(45, 194, 132);
+                    color = sf::Color(45, 194, 132);
                 case Object::Type::Poison:
-                    color = new sf::Color(255, 41, 80);
+                    color = sf::Color(255, 41, 80);
+                case Object::Type::Wall:
+                    color = sf::Color(94, 143, 143);
                 case Object::Type::Bot:
-                    color = new sf::Color(247, 160, 109);
+                    color = sf::Color(100, 76, 199);
             }
             square.setFillColor(color);
             mWindow.draw(square);
         }
+        mWindow.display();
     }
+}
 
-
-    mWindow.display();
+void World::worldStep()
+{
+        for (int i = 0; i < mCells.size(); i++)
+        {
+            for (int j = 0; j < mCells[i].size(); j++)
+            {
+                if (mCells[i][j]->getType() != Object::Type::Bot) continue;
+                
+            }
+        }
 }

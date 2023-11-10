@@ -11,8 +11,8 @@ class Bot : public Object
 {
 public:
     Bot();
-    void giveHealth();
-    void giveSteps();
+    void giveHealph();
+    void giveStep();
 
 private:
     enum class Type
@@ -21,14 +21,15 @@ private:
         Grab,
         Look,
         Turn,
-        Convert,
+        Convert, 
         Unctrans
     };
-    pair<Type, int> createStep();
-    Type setSteps();
-    vector<Type> mSteps;
-    int mHealth;
-    int mOneStepMax, mGrabMax, mLookMax, mTurnMax, mUnctransMax;
+    Type createStep();
+    void setSteps();
+    std::vector<Type> mSteps;
+    static int index;
+    int mHealph;
+    int mOneStepMax, mGrabMax, mLookMax, mTurnMax, mConvertMax, mUnctransMax;
 };
 
 #endif // !BOT_HPP
