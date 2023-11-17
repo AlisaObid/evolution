@@ -11,25 +11,36 @@ class Bot : public Object
 {
 public:
     Bot();
-    void giveHealph();
-    void giveStep();
-
-private:
-    enum class Type
+     enum class Commands
     {
         OneStep,
         Grab,
         Look,
-        Turn,
+        TurnRight,
+        TurnLeft,
         Convert, 
         Unctrans
+    };   
+    enum class Direction
+    {
+        Up,
+        Right,
+        Down,
+        Left
     };
-    Type createStep();
+    int giveHealph();
+    Bot::Commands giveStep();
+    void dealDamage(int damage);
+
+private:
+
+    Commands createStep();
     void setSteps();
-    std::vector<Type> mSteps;
-    static int index;
+    std::vector<Commands> mSteps;
+    int mIndex;
     int mHealph;
     int mOneStepMax, mGrabMax, mLookMax, mTurnMax, mConvertMax, mUnctransMax;
+    int mDirection;
 };
 
 #endif // !BOT_HPP

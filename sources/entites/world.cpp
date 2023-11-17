@@ -1,5 +1,6 @@
 #include "world.hpp"
 #include "models/object.hpp"
+#include "models/bot.hpp"
 #include <fstream>
 #include <iostream>
 #include <vector>
@@ -7,11 +8,16 @@
 World::World(sf::RenderWindow& aWindow, int aCellSize)
     : mWindow(aWindow), mCellSize(aCellSize)
 {
+    mWindow.setVerticalSyncEnabled(true);
+    mWindow.setFramerateLimit(60);
+
     mScreenX = 1000;
     mScreenY = 1000;
 
     std::ifstream fin("settings.txt");
     std::string str;
+
+    int botsCount = 10;
 
     while(fin >> str)
     {
@@ -21,10 +27,11 @@ World::World(sf::RenderWindow& aWindow, int aCellSize)
         }
         if(str == "bots_count")
         {
+            fin >> botsCount;
         }
     }
 
-    mWindow.create(sf::VideoMode(mScreenX, mScreenY), "ⱯⱯⱯⱯⱯ");
+    mWindow.create(sf::VideoMode(mScreenX, mScreenY), "Ɐ");
     mWindow.setFramerateLimit(60);
 
     int maxCoorX, maxCoorY, xDist, yDist;
@@ -81,7 +88,29 @@ void World::worldStep()
             for (int j = 0; j < mCells[i].size(); j++)
             {
                 if (mCells[i][j]->getType() != Object::Type::Bot) continue;
-                
+                switch(((Bot*)mCells[i][j])->giveStep())
+                {
+                    case Bot::Commands::OneStep:
+                    {
+                        
+                    }
+                    case Bot::Commands::Grab:
+                    {
+
+                    }
+                    case Bot::Commands::Look:
+                    {
+
+                    }
+                    case Bot::Commands::Convert:
+                    {
+
+                    }
+                    case Bot::Commands::Unctrans:
+                    {
+
+                    }
+                }
             }
         }
 }

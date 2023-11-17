@@ -17,7 +17,7 @@ public:
 private:
     void worldStep();
     std::vector<std::vector<Object*>> mCells;
-    int mCellSize, mScreenX, mScreenY;
+    int mCellSize, mScreenX, mScreenY, mBotsCount;
     sf::RenderWindow& mWindow;
 };
 
