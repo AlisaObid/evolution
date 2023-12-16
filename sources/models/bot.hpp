@@ -29,7 +29,7 @@ public:
         Left
     };
     int giveHealph();
-    Bot::Commands giveStep();
+    Bot::Commands nextStep();
     void dealDamage(int damage);
 
 private:
@@ -38,8 +38,7 @@ private:
     void setSteps();
     std::vector<Commands> mSteps;
     int mIndex;
-    int mHealph;
-    int mOneStepMax, mGrabMax, mLookMax, mTurnMax, mConvertMax, mUnctransMax;
+    int mHealth;
     int mDirection;
 };
 

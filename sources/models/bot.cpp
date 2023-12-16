@@ -4,7 +4,11 @@
 
 Bot::Bot() : Object(Object::Type::Bot)
 {
-    mIndex = -1;
+    mIndex = 0;
+    srand(time(NULL));
+    mDirection = rand() % 4;
+    mHealth = 100;
+
 }
 
 Bot::Commands Bot::createStep()
@@ -32,19 +36,69 @@ void Bot::setSteps()
     }
 }
 
-void Bot::dealDamage(int damage)
+void Bot::poison(int damage)
 {
-    mHealph -= damage;
+    mHealth -= 15;
+    if(mHealth <= 0) 
+    {
+
+    }
 }
 
-int Bot::giveHealph()
+void Bot::feed()
 {
-    return mHealph;
+    mHealth = max(mHealth + 10, 90);
 }
 
-Bot::Commands Bot::giveStep()
+int getHealth()
 {
-    if (mIndex == mSteps.size()) mIndex = -1;
+    return mHealth;
+}
+
+Commands nextStep()
+{
+    Commands command;
+    if(mIndex = mSteps.size()) mIndex = 0;
+    switch(mSteps[mIndex])
+    {
+        case Bot::Commands::OneStep:
+        {
+            command = Bot::Commands::OneStep;
+            return command;
+        }
+        case Bot::Commands::Grab:
+        {
+            command = Bot::Commands::OneStep;
+            return command;
+        }
+        case Bot::Commands::Look:
+        {
+            command = Bot::Commands::Look;
+            break;
+        }
+        case Bot::Commands::TurnRight:
+        {
+            mDirection++;
+            mDirection %= 8;
+            break;
+        }
+        case Bot::Commands::TurnLeft:
+        {
+            mDirection--;
+            mDirection %= 8;
+            break;
+        }
+        case Bot::Commands::Convert:
+        {
+            command = Bot::Commands::Convert;
+            break;
+        }
+        case Bot::Commands::Unctrans:
+        {
+            command = Bot::Commands::Unctrans;
+            break;
+        }
+    }
     mIndex++;
-    return mSteps[mIndex];
+    return command;
 }

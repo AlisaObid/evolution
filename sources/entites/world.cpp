@@ -5,6 +5,12 @@
 #include <iostream>
 #include <vector>
 
+#define BOTS 0
+#define FOOD 1
+#define WALL 2
+#define POISON 3
+#define EMPTY 4
+
 World::World(sf::RenderWindow& aWindow, int aCellSize)
     : mWindow(aWindow), mCellSize(aCellSize)
 {
@@ -17,7 +23,11 @@ World::World(sf::RenderWindow& aWindow, int aCellSize)
     std::ifstream fin("settings.txt");
     std::string str;
 
-    int botsCount = 10;
+    std::vector<int> remCells(5);
+    remCells[BOTS] = 10;
+    remCells[FOOD] = 30;
+    remCells[WALL] = 20;
+    remCells[POISON] = 15;
 
     while(fin >> str)
     {
@@ -27,7 +37,19 @@ World::World(sf::RenderWindow& aWindow, int aCellSize)
         }
         if(str == "bots_count")
         {
-            fin >> botsCount;
+            fin >> remCells[BOTS];
+        }
+        if(str == "poisonCount")
+        {
+            fin >> remCells[POISON];
+        }
+        if(str == "foodCount")
+        {
+            fin >> remCells[FOOD];
+        }
+        if(str == "wallCount")
+        {
+            fin >> remCells[WALL];
         }
     }
 
@@ -40,6 +62,38 @@ World::World(sf::RenderWindow& aWindow, int aCellSize)
     xDist = mCellSize * 2 - 3;
     yDist = mCellSize * 2 - 7;
     mCells.resize((maxCoorY - 1) / yDist + 1, std::vector<Object*>((maxCoorX - 1) / xDist + 1, new Object(Object::Type::None)));
+    remCells[EMPTY] = mCells.size() * mCells[0].size() - remCells[BOTS] - remCells[FOOD] - remCells[POISON] - remCells[WALL];
+    newWorld(remCells);
+}
+
+void newWorld(std::vector<int> remCells)
+{
+    std::cout<< "Generation map..." << endl;
+    for(int i = 0; i < mCells.size(); i++)
+    {
+        for(int j = 0; j < mCells[i].size(); j++)
+        {
+            if(i == 0 || i == mCells.size() - 1 || j == 0 || j == mCells[i].size() - 1)
+            {
+                mCells[i][j] = Object::Type::Wall;
+                continue;
+            }
+            
+            srand(time(NULL));
+            int Cell = rand() % 5;
+            while(remCell[Cell] == 0) Cell = rand() % 5;
+            remCell[Cell]--;
+            switch(Cell)
+            {
+                case BOTS: mCells[i][j] = Object::Type::Bot;
+                case WALL: mCells[i][j] = Object::Type::Wall;
+                case EMPTY: mCells[i][j] = Object::Type::Empty;
+                case FOOD: mCells[i][j] = Object::Type::Food;
+                case POISON: mCells[i][j] = Object::Type::Poison;
+            }
+        }
+    }
+    system("cls");
 }
 
 void World::print()
@@ -83,6 +137,7 @@ void World::print()
 
 void World::worldStep()
 {
+        std::vector<std::vector<Object*>> newCells = mCells;
         for (int i = 0; i < mCells.size(); i++)
         {
             for (int j = 0; j < mCells[i].size(); j++)
@@ -110,7 +165,12 @@ void World::worldStep()
                     {
 
                     }
+                    default:
+                    {
+                        continue;
+                    }
                 }
             }
         }
+        mCells = newCells;
 }
